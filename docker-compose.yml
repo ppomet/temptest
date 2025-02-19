@@ -1,0 +1,10 @@
+services:
+  traefik:
+    extends:
+      file: docker-compose.traefik.yml
+      service: traefik
+
+  web:
+    extends:
+      file: docker-compose.web.yml
+      service: web
